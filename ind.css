@@ -1,0 +1,150 @@
+@import url(css/bishkek.css);
+@import url(css/kg.css);
+@import url(css/world.css);
+@import url(css/milkyWay.css);
+@import url(css/sunSistem.css);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    /* align-items: center; */
+}
+
+.background {
+    opacity: .5;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    margin: 0;
+    width: auto;
+}
+
+p {
+    color: white;
+    font-size: 40px;
+    font-size: 700;
+    width: 86%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    padding-top: 4%;
+    max-width: 90%;
+    width: 100%;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title {
+    width: 100%;
+
+}
+
+.title--left h1 {
+    padding-left: 50%;
+    text-align: right;
+}
+
+.title--right h1 {
+    padding-right: 80%;
+    text-align: left;
+}
+
+.subtitle {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.subtitle--left p {
+    padding-left: 14%;
+    text-align: right;
+}
+
+.subtitle--right p {
+    padding-right: 14%;
+    text-align: left;
+}
+
+
+
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-width: 575px) {
+    section {
+        aspect-ratio: 16/10;
+    }
+
+    .background {
+        opacity: .7;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+
+    h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .text3 {
+        display: none;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
